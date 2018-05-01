@@ -19,5 +19,16 @@ namespace MMSapi.Controllers.chirag
             };
             return citys;
         }
+        [HttpGet]
+        [Route("api/chirag/Country")]
+        public List<string> country()
+        {
+            List<string> countrys = new List<string>()
+            {
+                "India","US","China"
+            };
+            return countrys;
+        }
     }
+
 }
